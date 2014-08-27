@@ -12,12 +12,12 @@ module.exports = function(grunt){
 	grunt.initConfig({
 		cafemocha: {
 			all: { 
-				src: ['public/qa/tests-crosspage.js', 'public/qa/tests-unit.js'], options: { ui: 'tdd' },
+				src: ['qa/tests-crosspage.js', 'qa/tests-unit.js'], options: { ui: 'tdd' },
 			}
 		}, jshint: {
 			app: ['index.js', 'public/js/**/*.js',
 					'lib/**/*.js'],
-			qa: ['Gruntfile.js', 'public/qa/**/*.js', 'qa/**/*.js'],
+			qa: ['Gruntfile.js', 'qa/**/*.js'],
 		} 
 	});
 
